@@ -37,4 +37,3 @@ perimetro = PI * radio * 2
 
 print(f"El área de un círculo de radio {radio} es: {area:.2f}")
 print(f"El perímetro de un círculo de radio {radio} es: {perimetro:.2f}")
-
