@@ -29,6 +29,16 @@ def matriz_digitos():
         matriz.append(lista)
     return matriz
 
+def promedia_matriz(matriz):
+    suma = 0
+    num_elementos = len(matriz) * len(matriz[0])
+
+    for renglon in matriz:
+        for numero in renglon:
+            suma = suma + numero
+
+    return suma / num_elementos
+
 
 matriz = crea_matriz(5, 7, 4)
 matriz_irregular = [
@@ -36,4 +46,11 @@ matriz_irregular = [
     [4, 5],
     [6, 7, 8, 9]
 ]
-imprime_matriz(matriz_digitos())
+
+prom = promedia_matriz([
+    [1, 2, 3],
+    [4, 5, 6]
+])
+
+print(prom)
+#imprime_matriz(matriz_digitos())

@@ -21,6 +21,11 @@ def multiplicar_por_dos(lista):
     
     return salida
 
+def reversa(lista) :
+    for indice in range(len(lista) - 1, -1, -1):
+        print(lista[indice], end=", ")
+    print("")
+
 def genera_lista(limite):
     lista = []
 
@@ -32,6 +37,7 @@ def genera_lista(limite):
     return lista
 
 info = genera_lista(3)
+reversa(info)
 info.insert(1, 10)
 print(multiplicar_por_dos(info))
 imprime_datos(info)
